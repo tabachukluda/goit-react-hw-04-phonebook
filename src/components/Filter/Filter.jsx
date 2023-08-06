@@ -14,7 +14,7 @@ export const Filter = ({ filter, handleChange }) => (
         name="filter"
         placeholder="Enter filter"
         value={filter}
-        onChange={handleChange}
+        onChange={(event) => handleChange(event.target.value)}
         aria-label="Filter contacts by name"
     />
     </div>
